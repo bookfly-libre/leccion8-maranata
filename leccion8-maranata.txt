@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Lección 8 GP "Maranata" - Orión</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #061a3a; /* azul oscuro */
+        color: white;
+        overflow-x: hidden;
+    }
+
+    /* Estrellas */
+    .stars {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        z-index: 0;
+    }
+
+    .stars::before,
+    .stars::after {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background: transparent;
+        background-image: radial-gradient(white 1px, transparent 1px);
+        background-size: 50px 50px;
+        opacity: 0.3;
+        animation: moveStars 120s linear infinite;
+    }
+
+    .stars::after {
+        background-size: 80px 80px;
+        opacity: 0.2;
+        animation-duration: 200s;
+    }
+
+    @keyframes moveStars {
+        from { transform: translateY(0); }
+        to { transform: translateY(-1000px); }
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        margin: auto;
+        padding: 40px 20px;
+    }
+
+    h1 {
+        color: gold;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    h2 {
+        margin-top: 40px;
+        color: #ffd966;
+    }
+
+    .section {
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+
+    .verse {
+        background: rgba(255,255,255,0.08);
+        padding: 15px;
+        border-left: 4px solid gold;
+        border-radius: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="content">
+
+    <h1>Lección 8 GP "Maranata" - Orión</h1>
+
+    <div class="section">
+        <h2>Tema:</h2>
+        <p>Liderar a personas difíciles</p>
+    </div>
+
+    <div class="section">
+        <h2>Versículo clave:</h2>
+        <div class="verse">
+            “¿De dónde vienen las guerras y los pleitos entre vosotros? ¿No es de vuestras pasiones, las cuales combaten en vuestros miembros?” (Sant. 4:1)
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Preguntas para dialogar:</h2>
+        <ol>
+            <li>¿Cuál es el origen de los conflictos en la iglesia?</li>
+            <li>¿Cuál debería ser la postura de un líder que busca resolver conflictos?</li>
+            <li>En tu opinión, ¿qué facilita más la resolución de conflictos?</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Reflexionemos:</h2>
+        <div class="verse">
+            “Nada hagan por rivalidad o vanagloria; antes bien en humildad, considerando a los demás como superiores a ustedes” (Fil. 2:3).
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Pongamos en práctica lo aprendido:</h2>
+        <p>Ora por 3 personas difíciles que conviven contigo.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
